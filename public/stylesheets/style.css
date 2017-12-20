@@ -1,6 +1,7 @@
 body {
 	padding: 50px;
 	font: 14px "microsoft yahei" Arial,sans-serif;
+	background-image: url("./images/header-shell.png");
 }
 
 a {
@@ -8,35 +9,56 @@ a {
 }
 
 #content {
-	width: 800px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#room {
-	background-color: #ddd;
+#content #room {
+	float: left;
 	margin-bottom: 1em;
+	text-align: center;
+	width: 70%;
+	margin-right: 1px;
+	margin-left: 7%;
+	color: #fff;
+}
+
+#room_name {
+	float: right;
+	width: 10%;
+	background-color: #eee;
+	text-align: center;
+	margin-right: 10%;
 }
 
 #messages {
-	width: 690px;
+	width: 70%;
 	height: 300px;
 	overflow: auto;
 	background-color: #eee;
 	margin-bottom: 1em;
 	margin-right: 10px;
+	margin-left: 7%;
+	border: 5px solid #FCFBFB;
+	border-radius: 5px;
 }
 
 #room-list {
 	float: right;
-	width: 100px;
+	width: 10%;
 	height: 300px;
 	background-color: #eee;
 	overflow: auto;
+	margin-right: 10%;
 }
 
 #room-list div {
-	border-bottom: 1px solid #eee;
+	border: 3px solid #ccc;
+	text-align: center;
+	background-color: #ccc;
+	border-bottom-color: #090909;
+	cursor: pointer;
 }
 
 #room-list div:hover {
@@ -44,11 +66,22 @@ a {
 }
 
 #send-message {
-	width: 700px;
+	width: 70%;
 	margin-bottom: 1em;
+	margin-left: 7%;
 	margin-right: 1em;
+}
+
+#send-button {
+	border: 5px solid #337AB7;
+	border-radius: 5px;
+	color: white;
+	background-color: #337AB7;
+	cursor: pointer;
 }
 
 #help {
 	font: 10px "microsoft yahei", Arial,sans-serif;
+	margin-left: 7%;
+	color: #fff;
 }
